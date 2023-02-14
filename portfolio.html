@@ -4,18 +4,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylereset" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
 
   <nav>
-
+    <a href="index.html"><img src="" alt="Aperature Photography Logo"></a>
+    <a href="portfolio.html">Bookings || Portfolio</a>
+    <div class="socials">
+      <a href="" alt="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
+      <a href="" alt="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg></a>
+      <a href="" alt="tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a>
+      <a href="" alt="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></a>
+    </div>
   </nav>
   <main>
+    <div class="portfolioPage">
+
       <div class="booking">
+          <form>
+        
+            <label id="name" for="name">Your Name</label><br>
+            <input type="text" name="name" placeholder="your name"><br><br>
+      
+            <label  id="email" for="email">Email Address</label><br>
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+      
+            <label  id="photographer" for="photographer">Choose a photographer</label><br>
+            <input type="" name="Photographer" placeholder="Photographer"><br><br>
+      
+            <label  id="appointment" for="appointment">Choose a date</label><br>
+            <input type="date" name="appointment"
+            required pattern="\d{4}-\d{2}-\d{2}"/>
+            <span class="validity"></span>
+      
+            <button>Submit</button>
+      
+          </form>
+  
         
       </div>
+
       <div class="scrollingPortfolio">
+        <h2> Abshir Ibrahim</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis esse eum placeat rem totam, explicabo obcaecati neque veniam aliquid, blanditiis ipsam harum consequuntur voluptatum hic magni ullam porro. Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facilis ut placeat aperiam impedit. Facere voluptatum natus quis. Est, saepe. Nesciunt ratione omnis similique repellat consequatur. Aspernatur tenetur magni impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi at nam rerum. Tempora, harum? Corrupti mollitia ducimus aperiam neque voluptates, molestiae, a esse fugiat alias assumenda obcaecati ea. Iste, tempore!
+        Nihil neque non fuga vero, dolore perferendis officiis eveniet minus vel qui cum sit ad labore eos odio quia nemo at. Nulla, quos placeat. Sapiente tempore ullam minus commodi nostrum?
+        Temporibus ea corporis facilis esse quos harum quae, nam nemo ipsa maiores natus. Eius dolores facere eligendi illo esse modi voluptatem corporis explicabo, tenetur, qui libero quis consectetur. Excepturi, ullam?
+        Tempora non doloribus pariatur rerum eos? Sapiente nemo laborum amet nobis doloribus commodi odio earum aut iusto, necessitatibus perferendis. In repudiandae nisi aperiam quis facilis, eaque dicta! Possimus, et rerum!
+        Ipsam quis quas dolorem aliquid quod! Error repudiandae eligendi tempore, voluptatum, maxime adipisci sapiente, eaque neque maiores ratione cumque officia nemo. Voluptas minima, voluptatem impedit nostrum magnam voluptatum rem delectus!
+        Quam, sequi laboriosam itaque recusandae cupiditate consectetur doloremque facilis magnam cumque totam tenetur corporis? Dolorem neque facere ipsum iure saepe nam itaque fuga assumenda a deleniti accusantium, quas sed molestias!
+        Quis maiores, accusantium recusandae voluptatem laboriosam dolore blanditiis reprehenderit aspernatur minima asperiores quo voluptates odio quae vel ea incidunt ut placeat? Animi nostrum, eius quia asperiores odit dignissimos numquam voluptatum?
+        Illo nulla saepe aliquam vero. Libero accusantium accusamus ex necessitatibus ipsa, doloribus dignissimos autem incidunt sequi culpa minima, deserunt vero dolorum asperiores soluta sapiente numquam quae molestiae earum distinctio harum?
+        Adipisci, fugit dolorem similique maiores velit voluptatibus recusandae ut suscipit magnam voluptatem officia tenetur sed cupiditate mollitia? Suscipit, dolorum hic, esse, harum itaque sint eos fuga fugiat sunt deleniti illum.
+        Molestias fugiat doloribus illo commodi culpa impedit ipsa reiciendis ad cupiditate magni hic distinctio at, tempore quae adipisci earum amet laborum nisi repudiandae et quasi a nemo expedita! Et, hic!
+        </p>
         
       </div>
   </main>
@@ -23,3 +71,4 @@
   
 </body>
 </html>
+ 
