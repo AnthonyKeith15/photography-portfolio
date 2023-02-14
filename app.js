@@ -37,4 +37,3 @@ image6.src = afrisix.src
 image7.src = afriseven.src
 image8.src = afrieight.src
 
-console.log(Images.name)
