@@ -24,3 +24,48 @@ The next tool we utilized is Github. We created a development branch in order to
 - As a client, I want to have my social media links avaiable at all times so that the user can get to me quickly
 - As a client, I want to be able to see all appointments that were made
 - As a client, I want to organize all work by different artist so that the user can see the different photography styles
+
+### Software Requirements
+
+Vision
+
+#### What is the vision of this product?
+-The vision of our product is to create websites for photographers to showcase their work to attract potential clients.
+
+#### What pain point does this project solve?
+
+- Allowing photographers who don’t have the proper tech skills to create a website.
+#### Why should we care about your product?
+
+- You should care about our product because we are making top tier designs that will gain customer attraction.
+
+#### Scope (In/Out)
+**IN - What will your product do**
+
+Our product will showcase portfolios of photographers work.
+Our product will allow users to seamlessly contact the photographers.
+Our product will allow users to leave reviews so new customers can look at them before choosing a photographer to work with.
+
+**OUT - What will your product not do.**
+Our product will not allow user to manually upload photos on their own.
+
+#### What will your MVP functionality be?
+Our MVP will be user design & user experience.
+
+#### What are your stretch goals?
+- Automatic changing themes.
+- Adding music.
+- A moving background on our landing page.
+#### Functional Requirements
+
+A user can book an appointment
+A user is able to view the artist’s portfolio in an organized manner.
+#### Data Flow
+
+- The user will go onto the website then they will be able to view portfolios of different photographers that work there. If they like what they see they’ll be able to book with the photographer of their choice.
+
+### Wireframes
+
+Hi Fidelity Wire Frame: https://www.figma.com/file/GecrzoXAbsFfQQxIYvfVAj/Untitled?node-id=9%3A44&t=LXG9vIEPy64sjPNE-0
+
+Low Fidelity Wire Frame: https://miro.com/app/board/uXjVPn6kEI4=/
