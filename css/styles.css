@@ -1,0 +1,31 @@
+.booking {
+
+  border:1px black solid;
+  width: 30%;
+  height: 400px;
+  margin: 30px;
+
+  justify-content: space-between;
+
+}
+
+.scrollingPortfolio {
+
+  border:1px black solid;
+  width: 70%;
+  height: 400px;
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+
+  
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 
+  
+}
