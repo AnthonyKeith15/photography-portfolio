@@ -144,4 +144,6 @@ h3{
   }
 
 
-
+  select#photo {
+    color: black;
+  }

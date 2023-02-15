@@ -35,10 +35,19 @@
             <label  id="email" for="email">Email Address</label><br>
             <input type="text" name="email" placeholder="Email">
             <br><br>
-      
+            
+            <!-- Problem below Here!!! -->
             <label  id="photographer" for="photographer">Choose a photographer</label><br>
-            <input type="" name="photographer" placeholder="Photographer"><br><br>
-      
+
+            <select name="photo" id="photo" >
+              <option placeholder=""></option>
+              <option value="Mohammed">Mohammed</option>
+              <option value="Anthony">Anthony</option>
+              <option value="Abshir">Abshir</option>
+              <option value="Arturo">Arturo</option>
+            </select><br><br>
+            <!-- Problem above Here!!! -->
+
             <label  id="appointment" for="appointment">Choose a date</label><br>
             <input type="date" name="appointment"
             required pattern="\d{4}-\d{2}-\d{2}"/>
