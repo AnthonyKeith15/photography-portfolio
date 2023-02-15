@@ -1,14 +1,14 @@
 'use strict'
-let imageHolder = document.getElementById('neonAfrica')
-let image1 = document.getElementById('afrione');
-let image2 = document.getElementById('afritwo');
-let image3 = document.getElementById('afrithree');
-let image4 = document.getElementById('afrifour');
-let image5 = document.getElementById('afrifive');
-let image6 = document.getElementById('afrisix');
-let image7 = document.getElementById('afriseven');
-let image8 = document.getElementById('afrieight')
-let allImages = [];
+let imageHolder = document.getElementById('Models')
+let image1 = document.getElementById('modelOne');
+let image2 = document.getElementById('modelTwo');
+let image3 = document.getElementById('modelThree');
+let image4 = document.getElementById('modelFour');
+let image5 = document.getElementById('modelFive');
+let image6 = document.getElementById('modelSix');
+let image7 = document.getElementById('modelSeven');
+let image8 = document.getElementById('modelEight')
+let modelImages = [];
 // construction functions for Images- Silk
 
 function Images(name, fileExtension = 'jpeg') {
@@ -26,7 +26,7 @@ let afrisix = new Images('afrisix')
 let afriseven = new Images('afriseven')
 let afrieight = new Images('afrieight')
 
-allImages = [afrione, afritwo, afrithree]
+modelImages = [afrione, afritwo, afrithree, afrifour, afrifive, afrisix, afriseven, afrieight]
 image1.src = afrione.src
 image2.src = afritwo.src
 image3.src = afrithree.src
@@ -35,6 +35,8 @@ image5.src = afrifive.src
 image6.src = afrisix.src
 image7.src = afriseven.src
 image8.src = afrieight.src
+
+for (let i = 0; i < modelImages.length; i++);
 
 let inputName = document.getElementById("name")
 let inputEmail = document.getElementById("email")
