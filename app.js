@@ -36,7 +36,7 @@ image6.src = afrisix.src
 image7.src = afriseven.src
 image8.src = afrieight.src
 
-for (let i = 0; i < modelImages.length; i++);
+// for (let i = 0; i < modelImages.length; i++);
 
 let inputName = document.getElementById("name")
 let inputEmail = document.getElementById("email")
