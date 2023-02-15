@@ -13,7 +13,6 @@ body {
 }
 nav {
   background-color: transparent;
-  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -76,17 +75,12 @@ svg:hover {
   border-radius: 10px;
 }
 
-body {
-  width: 100vw;
-  height: 10vh;
-}
-
 main {
   display: flex;
   flex-direction: column;
   height: 80vh;
   width: 80vw;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.95);
   margin: auto;
 }
 
@@ -159,7 +153,7 @@ button {
 
 .booking {
   width: 25%;
-  height: 60%;
+  height: 80%;
 }
 
 form{
