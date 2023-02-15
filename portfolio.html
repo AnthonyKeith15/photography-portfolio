@@ -73,14 +73,13 @@
               
               
               <label for="photographer">Choose a photographer</label>
-              <input type="text" id="photographer" name="Photographer" placeholder="Photographer">
+              <input type="text" id="photographer" name="photographer" placeholder="Photographer">
               
               <label for="appointment" for="appointment">Choose a date</label>
               <input type="date" id="appointment" name="appointment"
-              required pattern="\d{4}-\d{2}-\d{2}"/>
-              <span class="validity"></span>
-              
+              required pattern="\d{2}-\d{2}-\d{4}"/>
               <button>Submit</button>
+              <span id="reminder"></span>
               
             </fieldset>
           </form>     
@@ -139,6 +138,6 @@
     </div>
   </main>
 
-  
+ <script src="app.js"></script> 
 </body>
 </html>
