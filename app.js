@@ -77,7 +77,7 @@ let handleSubmit = function(event){
   localStorage.setItem("inputName", jsonFormName);
   localStorage.setItem("email", jsonFormEmail);
   localStorage.setItem("photographer", jsonFormPhotographer);
-  localStorage.setItem("appointment", jsonFormAppointment);
+  localStorage.setItem("appointment", jsonFormAppointmentpwd);
 }
 form.addEventListener('submit', handleSubmit);
 
