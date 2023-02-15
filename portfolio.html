@@ -61,29 +61,32 @@
    </nav>
   <main>
     <div class="portfolioPage">
+
       <div class="booking">
-          <form>
-            <fieldset>
-              <legend>Book Your Appointment Now</legend>
-              <label for="name">Your Name</label>
-              <input type="text" id="name"name="name" placeholder="Enter Name Here">
-              
-              <label for="email">Email Address</label>
-              <input type="text" id="email" name="email" placeholder="Enter Email">
-              
-              
-              <label for="photographer">Choose a photographer</label>
-              <input type="text" id="photographer" name="photographer" placeholder="Photographer">
-              
-              <label for="appointment" for="appointment">Choose a date</label>
-              <input type="date" id="appointment" name="appointment"
-              required pattern="\d{2}-\d{2}-\d{4}"/>
-              <button>Submit</button>
-              <span id="reminder"></span>
-              
-            </fieldset>
-          </form>     
+          <form id="form">
+        
+            <label id="inputName" for="inputName">Your Name</label><br>
+            <input id="inputName" type="text" name="inputName" placeholder="your name"><br><br>
+      
+            <label  id="email" for="email">Email Address</label><br>
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+      
+            <label  id="photographer" for="photographer">Choose a photographer</label><br>
+            <input type="" name="photographer" placeholder="Photographer"><br><br>
+      
+            <label  id="appointment" for="appointment">Choose a date</label><br>
+            <input type="date" name="appointment"
+            required pattern="\d{4}-\d{2}-\d{2}"/>
+            <span class="validity"></span>
+      
+            <button type="submit">Submit</button>
+      
+          </form>
+  
+        
       </div>
+
       <div class="scrollingPortfolio">
         <h2> Abshir Ibrahim</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis esse eum placeat rem totam, explicabo obcaecati neque veniam aliquid, blanditiis ipsam harum consequuntur voluptatum hic magni ullam porro. Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facilis ut placeat aperiam impedit. Facere voluptatum natus quis. Est, saepe. Nesciunt ratione omnis similique repellat consequatur. Aspernatur tenetur magni impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi at nam rerum. Tempora, harum? Corrupti mollitia ducimus aperiam neque voluptates, molestiae, a esse fugiat alias assumenda obcaecati ea. Iste, tempore!
@@ -141,3 +144,4 @@
  <script src="app.js"></script> 
 </body>
 </html>
+ 
