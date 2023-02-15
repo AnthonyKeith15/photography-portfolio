@@ -179,7 +179,7 @@ button {
 }
 button:hover {
   color: #04bbfb;
-  background-color: black;
+  background-color: transparent;
   box-shadow: 0 0 15px #04bbfb, 0 0 45px #04bbfb;
   border-radius: 10px;
   cursor: pointer;
