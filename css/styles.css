@@ -43,7 +43,7 @@ nav a {
   display: flex;
   max-height: 100%;
   width: 25%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 svg {
@@ -194,6 +194,10 @@ button:hover {
   width: 55%;
   height: 75%;
   overflow: scroll;
+}
+
+.scrollingPortfolio p{
+  color: black;
 }
 
 
