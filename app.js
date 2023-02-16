@@ -5,6 +5,7 @@ let artmodels = [];
 let anthonymodels = [];
 let modelArray = [];
 // construction functions for Images- Silk
+// Add alt text
 function Images(name, fileExtension = 'jpeg') {
   this.name = name;
   this.src = `models/${name}.${fileExtension}`;
@@ -89,6 +90,9 @@ for (let i = 0; i < artmodels.length; i++) {
   }
 }
 Populatemodels();
+// check for local storage (use if statement to see if local storage exists)
+// if local storage exists .getItem and JSON.parse local storage
+// run confirmAppointment function passing in values as parameters
 
 function confirmAppointment(name, email, photographer, date){
   let reminder = document.getElementById('reminder');
