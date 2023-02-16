@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+}
+
+body {
+  background-image: url("../img/gray-lined-bg.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+}
+
+/* Sizes the SVG for logo */
+#logo {
+  width: 100%;
+  height: 100%;
+}
+
+nav a {
+  width: fit-content;
+  font-size: 2rem;
+  height: 75%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  max-height: 100%;
+  width: 25%;
+  justify-content: space-between;
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  fill: white;
+}
+
+
+.socials a{
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* hover effect */
+svg:hover {
+  fill: #04bbfb;
+  box-shadow: 0 0 15px #04bbfb, 0 0 45px;
+  border-radius: 10px;
+}
+/* #neon is the text in the center "booking & portfolio" */
+#neon {
+  height: fit-content;
+}
+
+#neon:hover {
+  color: #04bbfb;
+  box-shadow: 0 0 15px #04bbfb, 0 0 45px #04bbfb;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  margin: auto;
+}
+
+.heroImage {
+  width: 100%;
+  max-height: 800px;
+  border: 1px solid white;
+}
+
+main.locations {
+  height: 20vh;
+  width: 10vw;
+  background-color: white;
+}
+
+h3{
+  width: 50vw;
+  text-align: center;
+  font-size: 3rem;
+  margin: 5px auto;
+}
+
+.locations{
+  width: 74%;
+  margin: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+
+.locations p{
+  height: 20vh;
+  width: 100%;
+  margin-bottom: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  border: 1px solid white;
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolioPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input,
+button {
+  color: black;
+}
+
+label,
+input,
+button {
+  font-size: 1.25rem;
+  margin: 0 10px;
+  font-family: sans-serif;
+}
+
+.scrollingPortfolio,
+.booking {
+  margin: 20px;
+}
+
+.booking {
+  width: 25%;
+  height: 80%;
+}
+
+form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  height: 50%;
+}
+
+legend {
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+}
+button:hover {
+  color: #04bbfb;
+  background-color: transparent;
+  box-shadow: 0 0 15px #04bbfb, 0 0 45px #04bbfb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#reminder {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  height: auto;
+  font-size: 1.5m;
+}
+
+#appointment{
+  min-height: 25px; 
+}
+.scrollingPortfolio {
+  width: 55%;
+  height: 75%;
+  overflow: scroll;
+}
+
+.scrollingPortfolio p{
+  color: black;
+}
+
+.portfolioPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.booking {
+  border: 1px white solid;
+  width: 30%;
+  height: 75%;  
+  }
+
+  .scrollingPortfolio {
+    width: 70%;
+    height: 75%;
+    margin-left: 20px;
+    overflow: scroll;
+  }
+  
+  .scrollingPortfolio h2 {
+    border: 1px white solid ;
+    text-align: center;
+  }
+
+  input {
+    color: black;
+    width: 75%;
+  }
+
+  button{
+    color: black;
+    margin-top: 10px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  section h2 {
+    width: 100%;
+    margin: 20px;
+  }
+  section img {
+    width: 300px;
+    height: 450px;
+    margin: 30px 0;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: .6s;
+  }
+
+  section img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  #reminder {
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+
+  .largeImage {
+   position: fixed;
+   z-index: 2;
+   right: 0;
+   top: 0;
+   width: 60%;
+   height: 90%;
+   overflow: auto;
+   background-color: transparent;
+   border: transparent;
+   transform: translateX(-10%);
+   transition: 1s;
+  }
+
+  .largeImage:hover{
+    opacity: 1;
+  }
+
+   select#photographer {
+    color: black;
+  }
+
+  .popup {
+    width: 400px;
+    background: rgb(30, 30, 30);
+    border-radius: 6px;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+  }
+
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    z-index: 2;
+  }
+
+  /* .close-popup{
+    visibility: hidden;
+
+  } */
+
+  .check{
+    width:150px;
+    height:150px;
+    margin-top: -35px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  }
+
+  .popup h2{
+    font-size: 38px;
+    font-weight:500;
+    margin:30px 0 10px;
+
+  }
+
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #2aa2f8;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline:none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  }
+
