@@ -1,20 +1,10 @@
 'use strict'
-let imageHolder = document.getElementById('Models')
-let image1 = document.getElementById('modelOne');
-let image2 = document.getElementById('modelTwo');
-let image3 = document.getElementById('modelThree');
-let image4 = document.getElementById('modelFour');
-let image5 = document.getElementById('modelFive');
-let image6 = document.getElementById('modelSix');
-let image7 = document.getElementById('modelSeven');
-let image8 = document.getElementById('modelEight')
 let modelImages = [];
 let abshirModels = [];
 let artmodels = [];
 let anthonymodels = [];
 let modelArray = [];
 // construction functions for Images- Silk
-
 function Images(name, fileExtension = 'jpeg') {
   this.name = name;
   this.src = `models/${name}.${fileExtension}`;
@@ -65,11 +55,9 @@ anthonymodels = [crossing, narrow, pagoda, purp, street, talltower, tower, white
 modelImages = [afrione, afritwo, afrithree, afrifour, afrifive, afrisix, afriseven, afrieight]
 abshirModels = [abshirimg1, abshirimg2, abshirimg3, abshirimg4, abshirimg5, abshirimg6, abshirimg7, abshirimg8]
 
-console.log(anthonymodels.length)
 
 function Populatemodels () {
 let abshirimages = document.getElementById('abshirModels')
-console.log('hello')
 
 for (let i = 0; i < abshirModels.length; i++) {
   let image = document.createElement('img')
@@ -78,7 +66,6 @@ for (let i = 0; i < abshirModels.length; i++) {
 
 }
 let antimages = document.getElementById('antmodels')
-console.log('bye')
 
 for (let i = 0; i < anthonymodels.length; i++) {
   let image = document.createElement('img')
@@ -86,88 +73,23 @@ for (let i = 0; i < anthonymodels.length; i++) {
   antimages.appendChild(image)
 }
 let myModels = document.getElementById('myModels')
-console.log('bye')
 
 for (let i = 0; i < modelImages.length; i++) {
   let image = document.createElement('img')
   image.src = modelImages[i].src
 myModels.appendChild(image)
-
+}
 let artimages = document.getElementById('artmodels')
-console.log('bye')
 
 for (let i = 0; i < artmodels.length; i++) {
   let image = document.createElement('img')
   image.src = artmodels[i].src
   artimages.appendChild(image)
-    // let model1 = modelArray.shift();
-    // let model2 = modelArray.shift();
-    // let model3 = modelArray.shift();
-    // let model4 = modelArray.shift();
-    // let model5 = modelArray.shift();
-    // let model6 = modelArray.shift();
-    // let model7 = modelArray.shift();
-    // let model8 = modelArray.shift();
-
-
-
-
-}
 
 }
 
 }
 Populatemodels();
-// for (let i = 0; i < artmodels.length; i++) {
-//   console.log(artmodels[i].name)
-// }
-// create new image tag
-// give it a src object.src
-
-//console.log(artmodels);
-//console.log(artmodels[5].name)
-
-
-// image1.src = afrione.src
-// image2.src = afritwo.src
-// image3.src = afrithree.src
-// image4.src = afrifour.src
-// image5.src = afrifive.src
-// image6.src = afrisix.src
-// image7.src = afriseven.src
-// image8.src = afrieight.src
-
-// image1.src = abshirimg1.src
-// image2.src = abshirimg2.src
-// image3.src = abshirimg3.src
-// image4.src = abshirimg4.src
-// image5.src = abshirimg5.src
-// image6.src = abshirimg6.src
-// image7.src = abshirimg7.src
-// image8.src = abshirimg8.src
-
-
-
-
-// for (let i = 0; i < modelImages.length; i++);
-
-// let inputName = document.getElementById("name")
-// let inputEmail = document.getElementById("email")
-// let inputPhotographer = document.getElementById("photographer")
-// let inputAppointment = document.getElementById("appointment");
-
-
-
-
-
-
-// localStorage.setItem("name", inputName.value);
-// localStorage.setItem("email", inputEmail.value);
-// localStorage.setItem("name", inputPhotographer.value);
-// localStorage.setItem("appointment", inputAppointment.value);
-
-
-// let form = document.querySelector('form');
 
 // function confirmAppointment(name, email, photographer, date){
 //   let reminder = document.getElementById('reminder');
