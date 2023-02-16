@@ -51,8 +51,18 @@ let inputEmail = document.getElementById("email")
 let inputPhotographer = document.getElementById("photographer")
 let inputAppointment = document.getElementById("appointment");
 let form = document.getElementById('form');
+let okButton = document.getElementById('okbtn');
 console.log(form);
+// Grab item from dom for pop up
+let popup = document.getElementById("popup");
 
+// Function for pop up
+function openPopup(){
+  popup.classList.toggle("open-popup");
+}
+// function closePopup(){
+//   popup.classList.remove("open-popup");
+// }
 
 // Handle submit
 let handleSubmit = function(event){
@@ -80,7 +90,7 @@ let handleSubmit = function(event){
   localStorage.setItem("appointment", jsonFormAppointment);
 }
 form.addEventListener('submit', handleSubmit);
-
+okButton.addEventListener('click', openPopup);
 
 
 // console.log(email);

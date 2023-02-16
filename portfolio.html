@@ -27,34 +27,45 @@
     <div class="portfolioPage">
 
       <div class="booking">
-          <form id="form">
-        
-            <label id="inputName" for="inputName">Your Name</label><br>
-            <input id="inputName" type="text" name="inputName" placeholder="your name"><br><br>
-      
-            <label  id="email" for="email">Email Address</label><br>
-            <input type="text" name="email" placeholder="Email">
-            <br><br>
-            
-            <!-- Problem below Here!!! -->
-            <label  id="photographer" for="photographer">Choose a photographer</label><br>
 
-            <select name="photo" id="photo" >
-              <option placeholder=""></option>
-              <option value="Mohammed">Mohammed</option>
-              <option value="Anthony">Anthony</option>
-              <option value="Abshir">Abshir</option>
+        
+        <form id="form">
+          
+          <label for="inputName">Your Name</label><br>
+          <input id="inputName" type="text" name="inputName" placeholder="your name"><br><br>
+      
+          <label for="email">Email Address</label><br>
+          <input id="email" type="text" name="email" placeholder="Email">
+          <br><br>
+          
+          <!-- Problem below Here!!! -->
+          <label for="photographer">Choose a photographer</label><br>
+          
+          <select name="photographer" id="photographer" >
+            <option placeholder=""></option>
+            <option value="Mohammed">Mohammed</option>
+            <option value="Anthony">Anthony</option>
+            <option value="Abshir">Abshir</option>
               <option value="Arturo">Arturo</option>
             </select><br><br>
             <!-- Problem above Here!!! -->
-
-            <label  id="appointment" for="appointment">Choose a date</label><br>
-            <input type="date" name="appointment"
+            
+            <label for="appointment">Choose a date</label><br>
+            <input id="appointment" type="date" name="appointment"
             required pattern="\d{4}-\d{2}-\d{2}"/>
             <span class="validity"></span>
-      
-            <button type="submit">Submit</button>
-      
+            <!-- added a onclick function -->
+            <button type="submit" class="button" onclick="openPopup()">Submit</button>
+            
+            <!-- pop up div -->
+            <div class ="popup" id="popup">
+              <img class="check" src="art-img/blue_checkmark.svg.png">
+              <h2> Thank you</h2>
+              <p>Your details has been successfully submitted. Thanks!</p>
+              <!-- added a on click function here  -->
+              <button type="button" id="okbtn" >OK</button>
+            </div>
+            <!--  Pop up end  -->
           </form>
   
         
