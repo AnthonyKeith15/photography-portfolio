@@ -120,3 +120,9 @@ abshirSpan.addEventListener('click', handleImageClick);
 antSpan.addEventListener('click', handleImageClick);
 moSpan.addEventListener('click', handleImageClick);
 artSpan.addEventListener('click', handleImageClick);
+
+
+
+
+
+

@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: 'Orbitron', sans-serif;
   color: white;
+  letter-spacing: 2px;
 }
 
 body {
@@ -157,16 +158,18 @@ button {
 
 form{
   height: 100%;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin: 30px;
   padding-top: 10px;
-  height: 100%;
+  height: 50%;
 }
 
 legend {
@@ -184,7 +187,9 @@ button:hover {
   cursor: pointer;
 }
 #reminder {
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
 }
 .scrollingPortfolio {
   width: 55%;
@@ -227,6 +232,7 @@ button:hover {
 
   button{
     color: black;
+    margin-top: 10px;
   }
   section {
     display: flex;
@@ -261,7 +267,6 @@ button:hover {
   .largeImage {
    position: fixed;
    z-index: 2;
-   padding-top: 100px;
    right: 0;
    top: 0;
    width: 60%;
