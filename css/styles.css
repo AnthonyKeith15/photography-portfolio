@@ -163,6 +163,8 @@ form{
   align-items: center;
   padding-top: 20px;
   gap: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 fieldset {
@@ -190,6 +192,12 @@ button:hover {
   width: 100%;
   padding: 30px;
   text-align: center;
+  height: auto;
+  font-size: 1.5m;
+}
+
+#appointment{
+  min-height: 25px; 
 }
 .scrollingPortfolio {
   width: 55%;
@@ -261,8 +269,12 @@ button:hover {
   #reminder {
     width: 100%;
     height: auto;
-    font-size: 1.5em;
+    font-size: 1em;
+    text-align: center;
+    padding: 30px;
   }
+
+
 
   .largeImage {
    position: fixed;
@@ -282,11 +294,64 @@ button:hover {
     opacity: 1;
   }
 
-  
+   select#photographer {
+    color: black;
+  }
 
-  
+  .popup {
+    width: 400px;
+    background: rgb(30, 30, 30);
+    border-radius: 6px;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
 
+  }
 
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    z-index: 2;
+  }
 
+  /* .close-popup{
+    visibility: hidden;
 
+  } */
+
+  .check{
+    width:150px;
+    height:150px;
+    margin-top: -35px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  }
+
+  .popup h2{
+    font-size: 38px;
+    font-weight:500;
+    margin:30px 0 10px;
+
+  }
+
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #2aa2f8;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline:none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  }
 

@@ -63,28 +63,47 @@
     <div class="portfolioPage">
 
       <div class="booking">
-          <form id="form">
+
         
+        <form id="form">
+          
             <label for="inputName">Your Name</label>
             <input id="inputName" type="text" name="inputName" placeholder="your name">
       
-            <label for="email">Email Address</label>
-            <input type="text" id="email" name="email" placeholder="Email">
+          <label for="email">Email Address</label>
+          <input id="email" type="text" name="email" placeholder="Email">
           
-      
-            <label  for="photographer">Choose a photographer</label>
-            <input type="" name="photographer" id="photographer" placeholder="Photographer">
-      
+          
+          <!-- Problem below Here!!! -->
+          <label for="photographer">Choose a photographer</label>
+          
+          <select name="photographer" id="photographer" >
+            <option placeholder=""></option>
+            <option value="Mohammed">Mohammed</option>
+            <option value="Anthony">Anthony</option>
+            <option value="Abshir">Abshir</option>
+              <option value="Arturo">Arturo</option>
+            </select>
+            <!-- Problem above Here!!! -->
             <label for="appointment">Choose a date</label>
             <input type="date" id="appointment" name="appointment"
             required pattern="\d{4}-\d{2}-\d{2}"/>
-            
-            <button type="submit">Submit</button>
+           
+            <!-- added a onclick function -->
+            <button type="submit" class="button" onclick="openPopup()">Submit</button>
             <p id="reminder"></p>
             
+            <!-- pop up div -->
+            <div class ="popup" id="popup">
+              <img class="check" src="models/blue_checkmark.svg.png">
+              <h2> Thank you</h2>
+              <p>Your details have been successfully submitted. Thanks!</p>
+              <!-- added a on click function here  -->
+              <button type="button" id="okbtn" >OK</button>
+            </div>
+            <!--  Pop up end  -->
+            
           </form>
-  
-        
       </div>
 
       <div class="scrollingPortfolio">
